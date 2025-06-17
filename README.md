@@ -22,20 +22,21 @@ TTS: ElevenLabs, pyttsx3
 Others: Python, dotenv
 
 
-📁 Project Structure
+## 📁 Project Structure
 
-Agent/
-├── app.py                     # Main Streamlit application
-├── requirements.txt
-├── modules/                   
-│   ├── speech_to_text.py      # Voice-to-text conversion
-│   ├── email_generator.py     # Email content generation
-│   ├── send_email.py          # Email dispatch logic
-│   ├── user_confirmation.py   # Handle user confirmation prompts
-│   └── feedback.py            # Voice feedback system
-├── utils/
-│   ├── gmail_auth.py          # Gmail API authentication
-│   └── contact_lookup.py      # Fetch contacts from Google Sheets
+- `WhisprMail/`
+  - `app.py` : Main Streamlit application
+  - `requirements.txt`
+  - `modules/`
+    - `speech_to_text.py` : Voice-to-text conversion
+    - `email_generator.py` : Email content generation
+    - `send_email.py` : Email dispatch logic
+    - `user_confirmation.py` : Handle user confirmation prompts
+    - `feedback.py` : Voice feedback system
+  - `utils/`
+    - `gmail_auth.py` : Gmail API authentication
+    - `contact_lookup.py` : Fetch contacts from Google Sheets
+
 
 
 ⚙️ Setup and Installation
