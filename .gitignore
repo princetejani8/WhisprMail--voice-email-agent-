@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variable files
+.env
+
+# Service account & credentials
+service_account.json
+client_oauth.json
+token.pickle
+
+# Linux
+.DS_Store
+*.swp
+
+# Jupyter Notebook checkpoints (if you're using notebooks)
+.ipynb_checkpoints/
+
+# VSCode settings (optional)
+.vscode/
