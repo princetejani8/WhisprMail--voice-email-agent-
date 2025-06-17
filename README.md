@@ -1,25 +1,25 @@
-🎙️ Voice Email Agent
-Voice Email Agent is a Streamlit-based assistant that enables users to compose and send emails using natural voice commands. It leverages modern speech recognition and AI-driven language models to streamline email communication, making it faster and more intuitive.
+# 🎙️ Voice Email Agent
+- Voice Email Agent is a Streamlit-based assistant that enables users to compose and send emails using natural voice commands. It leverages modern speech recognition and AI-driven language models to streamline email communication, making it faster and more intuitive.
 
 
-🚀 Features
+## 🚀 Features
 
-🎤 Voice command transcription using SpeechRecognition
-🧠 AI-powered email drafting with LangChain and LangGraph
-🔍 Contact lookup through Google Sheets
-📨 Email preview and user confirmation before sending
-🔐 Secure sending via Gmail API
-🗣️ Voice feedback using ElevenLabs or pyttsx3
+- 🎤 Voice command transcription using SpeechRecognition
+- 🧠 AI-powered email drafting with LangChain and LangGraph
+- 🔍 Contact lookup through Google Sheets
+- 📨 Email preview and user confirmation before sending
+- 🔐 Secure sending via Gmail API
+- 🗣️ Voice feedback using ElevenLabs or pyttsx3
 
 
-🧰 Technologies Used
+## 🧰 Technologies Used
 
-Frontend: Streamlit
-Speech Recognition: SpeechRecognition, PyAudio
-AI: LangChain, LangGraph, Groq
-Email Services: Gmail API
-TTS: ElevenLabs, pyttsx3
-Others: Python, dotenv
+- Frontend: Streamlit
+- Speech Recognition: SpeechRecognition, PyAudio
+- AI: LangChain, LangGraph, Groq
+- Email Services: Gmail API
+- TTS: ElevenLabs, pyttsx3
+- Others: Python, dotenv
 
 
 ## 📁 Project Structure
@@ -39,25 +39,31 @@ Others: Python, dotenv
 
 
 
-⚙️ Setup and Installation
+## ⚙️ Setup and Installation
 
-Clone the Repository
-Install Dependencies
- └──pip install -r requirements.txt
-Environment Setup
- └──Create a .env file:
-        GROQ_API_KEY=your_groq_api_key
-        GOOGLE_API_KEY=your_google_api_key
-        ELEVENLABS_API_KEY=your_elevenlabs_api_key
-Google API Setup:
-├──Place client_oauth.json in the root directory for Gmail API.
-└──Place service_account.json for Google Sheets access.
+### 1. Clone the Repository
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Environment Setup (Create a .env file in the root directory with the following)
+```bash
+GROQ_API_KEY=your_groq_api_key
+GOOGLE_API_KEY=your_google_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+```
+### 4. Google API Setup
+- Place `client_oauth.json` in the root directory for Gmail API access
+- Place `service_account.json` in the root directory for Google Sheets access
+### 5. Run the Application
+```bash
+streamlit run app.py
+```
 
-Run the App
-└──streamlit run app.py
 
 
-🧪 Usage
+
+## 🧪 Usage
 
 Click "Activate Assistant" to start recording.
 Speak your email request (e.g., "Send an email to Sarah confirming our meeting").
@@ -65,6 +71,6 @@ Review the AI-generated email.
 Confirm to send or cancel.
 
 
-📄 License
+## 📄 License
 Refer to the LICENSE file for usage rights.
 
