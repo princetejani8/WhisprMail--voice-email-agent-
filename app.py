@@ -274,37 +274,5 @@ if "workflow_output" in st.session_state:
 
 # # Step 2: Run Workflow
 # if "voice_text" in st.session_state:
-#     st.write("### 📝 Transcribed Text")
-#     st.write(st.session_state["voice_text"])
-
-#     if st.button("Run Email Workflow"):
-#         state = record_speech_tool()
-#         state = generate_email_content_tool(state)
-#         state = lookup_email_tool(state)
-
-#         if state.get("status") == "error":
-#             st.error(state["error_message"])
-#         else:
-#             state = preview_and_confirm_tool(state)
-#             st.session_state["workflow_output"] = state
-
-# # Step 3: Preview & Confirm
-# if "preview" in st.session_state:
-#     preview = st.session_state["preview"]
-#     st.write("### 📬 Email Preview")
-#     st.text(f"To: {preview['to']}")
-#     st.text(f"Subject: {preview['subject']}")
-#     st.text(preview["body"])
-
-#     confirm = st.radio("Send this email?", ["Yes", "No"])
-#     st.session_state["confirm_send"] = confirm == "Yes"
-
-#     if st.button("Confirm Send"):
-#         final_state = preview_and_confirm_tool(st.session_state["workflow_output"])
-#         final_output = send_email_tool(final_state)
-
-#         if final_output.get("status") == "success":
-#             st.success("✅ Email sent successfully!")
-#         else:
-#             st.error(f"❌ {final_output.get('error_message', 'Unknown error')}")
+#     st.write("### 📝 Tr
 
